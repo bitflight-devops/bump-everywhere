@@ -20,14 +20,14 @@ inputs:
   release-type:
     description: The type of the GitHub release
     required: false
-    default: 'release'
+    default: "release"
   release-token:
     description: Personal access token (PAT) used to release to GitHub.
     required: false
     default: ${{ github.token }}
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
     - --repository ${{ inputs.repository }}
     - --user ${{ inputs.user }}
@@ -36,5 +36,5 @@ runs:
     - --release-token ${{ inputs.release-token }}
     - --commit-message ${{ inputs.commit-message }}
 branding:
-  icon: 'arrow-up'  
-  color: 'yellow'
+  icon: "arrow-up"
+  color: "yellow"

@@ -1,8 +1,8 @@
 name: Publish
 
 on:
- release:
-   types: [created] # will be triggered when a NON-draft release is created and published.
+  release:
+    types: [created] # will be triggered when a NON-draft release is created and published.
 
 jobs:
   publish-npm:

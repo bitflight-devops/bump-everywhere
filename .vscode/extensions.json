@@ -1,7 +1,7 @@
 {
-    "recommendations": [
-        "davidanson.vscode-markdownlint",
-        "timonwong.shellcheck",
-        "EditorConfig.EditorConfig"
-    ]
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "timonwong.shellcheck",
+    "EditorConfig.EditorConfig"
+  ]
 }

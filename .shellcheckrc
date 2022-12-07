@@ -1,0 +1,7 @@
+enable=all
+source-path=SCRIPTDIR
+disable=SC2154
+disable=SC2155
+disable=SC2250
+disable=SC2312
+disable=SC2119

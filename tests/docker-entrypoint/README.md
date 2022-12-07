@@ -4,7 +4,7 @@ It's a simple environment to manually and locally test the changes in [docker-en
 
 ## Run tests
 
-- Update [middleman.sh](./middleman.sh) to reflect changes in  [docker-entrypoint.sh](./../../docker-entrypoint.sh)
+- Update [middleman.sh](./middleman.sh) to reflect changes in [docker-entrypoint.sh](./../../docker-entrypoint.sh)
 - Run `./tests/docker-entrypoint/caller.sh` and ensure it prints the parameters in expected way.
 
 ## Files

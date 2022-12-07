@@ -1,23 +1,19 @@
 name: Quality checks
 
-on: [ push ]
+on: [push]
 
 jobs:
-
   validate-shell:
     name: Validate shell
     runs-on: ubuntu-latest
     steps:
-      - 
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      - 
-        name: Install ShellCheck
+      - name: Install ShellCheck
         run: sudo apt-get update -y && sudo apt-get install -y shellcheck
-      -
-        name: Lint shell scripts
+      - name: Lint shell scripts
         run: find . -name "*.sh" | xargs shellcheck --external-sources --source-path=SCRIPTDIR
-  
+
   lint:
     name: Validate markdown & yaml files
     runs-on: ubuntu-latest
@@ -34,7 +30,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: "14.x"
       - name: Install dependencies
         run: npm ci
       - name: Lint

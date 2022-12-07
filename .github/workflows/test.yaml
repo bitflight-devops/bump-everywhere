@@ -1,27 +1,22 @@
 name: Test
 
-on: [ push ]
+on: [push]
 
 jobs:
-
   run-tests:
     name: Run automated tests
     runs-on: ubuntu-latest
     steps:
-      - 
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      -
-        name: Run all tests
+      - name: Run all tests
         run: bash ./tests/run.sh
 
   build-docker:
     name: Ensure ability to build docker
     runs-on: ubuntu-latest
     steps:
-      - 
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      -
-        name: Build docker
+      - name: Build docker
         run: docker build . --tag bump-everywhere

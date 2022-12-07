@@ -10,6 +10,7 @@
 [![Code size](https://img.shields.io/github/languages/code-size/undergroundwires/bump-everywhere)](./scripts)
 [![Docker image size](https://img.shields.io/docker/image-size/undergroundwires/bump-everywhere)](https://hub.docker.com/r/undergroundwires/bump-everywhere)
 [![Auto-versioned by bump-everywhere](https://github.com/undergroundwires/bump-everywhere/blob/master/badge.svg?raw=true)](https://github.com/undergroundwires/bump-everywhere)
+
 <!-- [![npm](https://img.shields.io/npm/v/bump-everywhere/latest)](https://www.npmjs.com/package/bump-everywhere) -->
 
 ![functions of bump-everywhere](./img/functions.png)
@@ -38,37 +39,37 @@
   with:
     # Repository name with owner to bump & release. For example, undergroundwires/bump-everywhere
     # (Optional) Default: ${{ github.repository  }}
-    repository: ''
+    repository: ""
 
     # Name of the user who will do the bump commit
     # (Optional) Default: ${{ github.actor }}
-    user: ''
+    user: ""
 
     # Commit message that will be used in the bump commit
     # (Optional) Default: ⬆️ bump everywhere to {{version}}
-    commit-message: ''
+    commit-message: ""
 
     # Personal access token (PAT) used to clone & push to the repository.
     # If you use default, it'll not trigger other actions, but your own PAT then it triggers new actions
     # (Optional) Default: ${{ github.token }}
-    git-token: ''
+    git-token: ""
 
     # The type of the GitHub release
     # Options: 'release' | 'prerelease' | 'draft' | 'none' (does not release)
     # (Optional) Default: 'release'
-    release-type: ''
+    release-type: ""
 
     # Personal access token (PAT) used to release to GitHub.
     # Used only if release-type is not "none"
     # If you use default, it'll not trigger other actions, but your own PAT then it triggers new actions
     # (Optional) Default: ${{ github.token }}
-    release-token: ''
+    release-token: ""
 
     # Git branch to push the changes such as version tags, CHANGELOG file, version changes...
     # Configuring this should not be needed for most use-cases.
     # Use this only if you DO NOT use a single main default branch (e.g. `master` or `main`).
     # (Optional) Default: Default "git clone" behavior. Checks out to default branch of remote.
-    branch: ''
+    branch: ""
 ```
 
 [↑](#bump-everywhere)
